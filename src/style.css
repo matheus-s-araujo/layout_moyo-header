@@ -52,23 +52,27 @@ body {
 }
 
 .header__menu-option {
+  position: relative;
   text-transform: uppercase;
   justify-content: center;
   text-decoration: none;
   color: var(--default-black);
   font-size: 12px;
-  line-height: var(--header-height);
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  height: 60px;
 }
 
 .header__menu-option:hover {
   color: var(--blue-letters);
 }
 
-.header__menu-option.is-active {
+.is-active {
   color: var(--blue-letters);
 }
 
-.header__menu-option.is-active::after {
+.is-active::after {
   content: '';
   position: absolute;
   bottom: 0;
